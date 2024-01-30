@@ -40,6 +40,11 @@
     "entry-function": "ts-node scripts/entry-function.ts",
     "run-test-coin": "ts-node tests/test-coin/test-coin.ts",
     "run-test-coin-compile": "aptos tests/move compile --package-dir move",
-    "run-test-coin-publish": "aptos tests/move publish --package-dir move"
+    "run-test-coin-publish": "aptos tests/move publish --package-dir move",
+    "publish:aries": "ts-node src/cmd/aries/publish.ts",
+    "update-reserve-config": "ts-node scripts/aries-manage/update-reserve-config.ts",
+    "update-reward-rate": "ts-node scripts/aries-manage/update-reward-rate.ts",
+    "add-reward": "ts-node scripts/aries-manage/add-reward.ts",
+    "add-reserve": "ts-node scripts/aries-manage/add-reserve.ts"
   }
 }
